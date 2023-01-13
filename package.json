@@ -13,6 +13,7 @@
     "nodemon": "^2.0.20",
     "node" : "v16.13.2",
     "react": "^18.2.0",
+    "bootstrap": "^5.2.3",
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0",
