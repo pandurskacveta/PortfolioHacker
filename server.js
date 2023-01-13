@@ -2,13 +2,14 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+ const port = process.env.PORT || 3000
 
 // Using express() to setup the server that’ll run on port 3000:
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(3000, () => console.log("Server Running"));
+app.listen(port, () => console.log("Server Running"));
 
 // creating the transport
 const contactEmail = nodemailer.createTransport({
